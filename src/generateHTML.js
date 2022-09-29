@@ -1,4 +1,3 @@
-// create Manager card
 const generateManager = function (manager) {
     return `
     <div class="col-4 mt-4">
@@ -19,7 +18,6 @@ const generateManager = function (manager) {
     `;
 }
 
-// create Engineer card
 const generateEngineer = function (engineer) {
     return `
     <div class="col-4 mt-4">
@@ -40,14 +38,13 @@ const generateEngineer = function (engineer) {
     `
 }
 
-// create Programmer card
 const generateProgrammer = function (programmer) {
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">
             <div class="card-header">
                 <h3>${programmer.name}</h3>
-                <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
+                <h4>Programmer</h4><i class="material-icons">assignment_ind</i>
             </div>
 
             <div class="card-body">
@@ -61,7 +58,7 @@ const generateProgrammer = function (programmer) {
     `
 }
 
-// create Intern card 
+
 const generateIntern = function (intern) {
     return `
     <div class="col-4 mt-4">
@@ -81,10 +78,9 @@ const generateIntern = function (intern) {
     `
 };
 
-// push array to page 
+
 generateHTML = (data) => {
 
-    // array for cards 
     pageArray = []; 
 
     for (let i = 0; i < data.length; i++) {
@@ -92,29 +88,24 @@ generateHTML = (data) => {
         const role = employee.getRole(); 
 
 
-        // call manager function
         if (role === 'Manager') {
             const managerCard = generateManager(employee);
 
             pageArray.push(managerCard);
         }
 
-        // call programmer function
         if (role === 'Programmer') {
             const programmerCard = generateProgrammer(employee);
 
             pageArray.push(programmerCard);
         }
 
-
-        // call engineer function
         if (role === 'Engineer') {
             const engineerCard = generateEngineer(employee);
 
             pageArray.push(engineerCard);
         }
 
-        // call intern function 
         if (role === 'Intern') {
             const internCard = generateIntern(employee);
 
@@ -123,16 +114,15 @@ generateHTML = (data) => {
         
     }
 
-    // joining strings 
+  
     const employeeCards = pageArray.join('')
 
-    // return to generated page
     const generateTeam = generateTeamPage(employeeCards); 
     return generateTeam;
 
 }
 
-// generate html page 
+
 const generateTeamPage = function (employeeCards) {   
   return`
   <!DOCTYPE html>
@@ -172,5 +162,4 @@ const generateTeamPage = function (employeeCards) {
 `;
 }
 
-// export to index
 module.exports = generateHTML; 

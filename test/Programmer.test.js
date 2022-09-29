@@ -1,16 +1,23 @@
-// using Manager constructor 
-const Manager = require('../lib/Manager');
 
-// creating manager object  
-test('creates an Manager object', () => {
-    const manager = new Manager('Nicole', 90, 'nicole.elisaw@gmail', 4);
+const Programmer = require('../lib/Programmer');
+
+ 
+test('creates an Programmer object', () => {
+    const programmer = new Programmer('Fred', 20, 'fred@cacbydesign.com', 'fred2020');
     
-    expect(manager.officeNumber).toEqual(expect.any(Number));
+    expect(programmer.github) .toEqual(expect.any(String));
 });
 
-// gets role from getRole()
-test('gets role of employee', () => {
-    const manager = new Manager('Nicole', 90, 'nicole.elisaw@gmail.com');
 
-    expect(manager.getRole()).toEqual("Manager");
-}); 
+test('gets programmer github value', () => {
+    const programmer = new Programmer('Fred', 20, 'fred@cacbydesign.com', 'fred2020');
+
+    expect(programmer.getGithub()).toEqual(expect.stringContaining(programmer.github.toString()));
+});
+
+
+test('gets role of employee', () => {
+    const programmer = new Programmer('Fred', 20, 'fred@cacbydesign.com', 'fred2020');
+
+    expect(programmer.getRole()).toEqual("Programmer");
+});

@@ -3,6 +3,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
+const Programmer = require('./lib/Programmer');
 const Intern = require('./lib/Intern'); 
 const teamArray = []; 
 
@@ -193,11 +194,11 @@ const addEmployee = () => {
 
 const writeFile = data => {
     fs.writeFile('./dist/index.html', data, err => {
-        // if there is an error 
+      
         if (err) {
             console.log(err);
             return;
-        // when the profile has been created 
+      
         } else {
             console.log("Your HTML team profile has been successfully created!")
         }
