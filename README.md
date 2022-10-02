@@ -9,7 +9,7 @@ This application is covered by the Open license.
 
 ![alt text](./Assets/show_passed_test.gif)
 
-![alt text](./Assets/Load_Data.webm)
+![alt text](./Assets/Team_Profile_Generator.gif)
 
 ## Table of Contents
 - [Description](#project-description)
