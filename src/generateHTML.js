@@ -1,3 +1,4 @@
+// Create Manager Card
 const generateManager = function (manager) {
     return `
     <div class="col-4 mt-4">
@@ -17,6 +18,7 @@ const generateManager = function (manager) {
     `;
 }
 
+// Create Engineer Cards
 const generateEngineer = function (engineer) {
     return `
     <div class="col-4 mt-4">
@@ -35,7 +37,7 @@ const generateEngineer = function (engineer) {
     </div>
     `
 }
-
+// Create Programmer cards
 const generateProgrammer = function (programmer) {
     return `
     <div class="col-4 mt-4">
@@ -55,7 +57,7 @@ const generateProgrammer = function (programmer) {
     `
 }
 
-
+// Create Intern cards
 const generateIntern = function (intern) {
     return `
     <div class="col-4 mt-4">
@@ -75,7 +77,7 @@ const generateIntern = function (intern) {
     `
 };
 
-
+// Put data that is in the array in the varriables for the page
 generateHTML = (data) => {
 
     pageArray = []; 
@@ -83,7 +85,6 @@ generateHTML = (data) => {
     for (let i = 0; i < data.length; i++) {
         const employee = data[i];
         const role = employee.getRole(); 
-
 
         if (role === 'Manager') {
             const managerCard = generateManager(employee);
@@ -118,7 +119,7 @@ generateHTML = (data) => {
 
 }
 
-
+// generate the HTML Page
 const generateTeamPage = function (employeeCards) {   
   return`
   <!DOCTYPE html>
@@ -156,4 +157,5 @@ const generateTeamPage = function (employeeCards) {
     `;
 }
 
+// Export to Index.js
 module.exports = generateHTML; 
