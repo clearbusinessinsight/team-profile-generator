@@ -1,17 +1,15 @@
 
 
-# Team Profile generator 👋
+# Team Profile Generator 👋
 
-![alt text](./Assets/show_passed_test.gif
-
-
-![alt text](./Assets/Load_Data.webm
 
 ![badge](https://img.shields.io/badge/license-Open-brightgreen)
 <br />
 This application is covered by the Open license. 
 
-![alt text](./utils/ReadmeGenerator2.0.gif)
+![alt text](./Assets/show_passed_test.gif)
+
+![alt text](./Assets/Load_Data.webm)
 
 ## Table of Contents
 - [Description](#project-description)
@@ -25,7 +23,7 @@ This application is covered by the Open license.
 
 
 ## Project Description
-The Team Profile Generator allows the user to enter the different emplyees into the system along with the contact information and position. then it generates an HTML page to make it easy to see who is on the team and how to contact them.
+The Team Profile Generator allows the user to enter the different emplyees into the system along with the contact information and position they hold. Then it generates an HTML page to make it easy to see who is on the team and how to contact them.
 
 ## Installation Instructions
 💾 Run NPM i, then run NODE index.js.  Answer ythe questions and the HTML file is automagically created.
