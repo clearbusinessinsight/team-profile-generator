@@ -2,8 +2,10 @@
 
 # Team Profile generator 👋
 
-![alt text](./Assets/Team%20Profile%20generator.webm
+![alt text](./Assets/show_passed_test.gif
 
+
+![alt text](./Assets/Load_Data.webm
 
 ![badge](https://img.shields.io/badge/license-Open-brightgreen)
 <br />
