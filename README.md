@@ -2,6 +2,9 @@
 
 # Team Profile generator 👋
 
+![alt text](./Assets/Team%20Profile%20generator.webm
+
+
 ![badge](https://img.shields.io/badge/license-Open-brightgreen)
 <br />
 This application is covered by the Open license. 
